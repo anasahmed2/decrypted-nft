@@ -8,6 +8,7 @@ function DigitalCollectCard() {
         <main className='digitalCard-container'>
             <div className='digital-card-image'>
                 <Image
+                loading='lazy'
                     width={440}
                     height={500}
                     alt='hero-image'
@@ -16,9 +17,9 @@ function DigitalCollectCard() {
             <div className='digital-card-detail'>
                 <div className='digital-logo-container'>
                     <Image
+                    loading='lazy'
                         width={282}
                         height={150}
-                        loading='lazy'
                         alt='superheroine-logo-digital'
                         src={"/assets/images/logo.png"}
                     />
