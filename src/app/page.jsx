@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import DigitalCollectibles from "./components/DigitalCollectibles";
 import CommunityPerks from "./components/CommunityPerks";
+import SuperHeroWorld from "./components/SupperHeroWorld";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
       </div>
       <div className="main-greadent-section">
         <CommunityPerks/>
+      </div>
+      <div className="main-greadent-section">
+        <SuperHeroWorld/>
       </div>
     </main>
   );

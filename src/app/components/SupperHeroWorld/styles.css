@@ -1,0 +1,13 @@
+.superHeroWorld-container{
+    padding-top: 100px;
+    row-gap: 3rem;
+}
+
+.superHeroWorld-heading{
+    color: #ECD200;
+}
+
+.superHeroWorld-card-container{
+    width: 100%;
+    height: auto;
+}

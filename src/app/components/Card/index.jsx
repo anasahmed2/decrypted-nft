@@ -8,7 +8,7 @@ function DigitalCollectCard() {
         <main className='digitalCard-container'>
             <div className='digital-card-image'>
                 <Image
-                loading='lazy'
+                    loading='lazy'
                     width={440}
                     height={500}
                     alt='hero-image'
@@ -17,7 +17,7 @@ function DigitalCollectCard() {
             <div className='digital-card-detail'>
                 <div className='digital-logo-container'>
                     <Image
-                    loading='lazy'
+                        loading='lazy'
                         width={282}
                         height={150}
                         alt='superheroine-logo-digital'
@@ -44,4 +44,41 @@ function DigitalCollectCard() {
     )
 }
 
-export { DigitalCollectCard }
+function SuperHeroWorldCard(props) {
+    const { revers, image, heading, detail, points } = props
+    return (
+        <main className={`superHeroWorldCard-container ${revers && "revers"}`}>
+            <div className='superHeroWorldCard-text-side'>
+                <div className='superHeroWorldCard-detail'>
+                    <h4 className='superHeroWorldCard-heading'>{heading}</h4>
+                    <p>{detail}</p>
+                    <ul className='superHeroWorldCard-list'>
+                        {points?.map((value, index) => (
+                            <li key={index}>{value.point}</li>
+                        ))}
+                    </ul>
+                </div>
+                <div className='superHeroWorldCard-weapon'>
+                    <Image
+                        width={541}
+                        height={601}
+                        alt="WEAPON image"
+                        src={image}
+                        loading='lazy'
+                        className={`${revers ? "superHeroWorldCard-weapon-right" : "superHeroWorldCard-weapon-left"}`} />
+                </div>
+            </div>
+            <div className='superHeroWorldCard-image-side relative'>
+                <Image
+                    width={326}
+                    height={52}
+                    alt={`point-${revers ? "" : ""}`}
+                    src={`${revers ? "/assets/images/point-right.svg" : "/assets/images/point-left.svg"}`}
+                    loading='lazy'
+                />
+            </div>
+        </main>
+    )
+}
+
+export { DigitalCollectCard, SuperHeroWorldCard }

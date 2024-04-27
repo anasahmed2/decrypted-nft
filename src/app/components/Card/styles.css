@@ -6,7 +6,7 @@
     border-radius: 7px;
     display: flex;
     justify-content: space-between;
-    margin: 30px auto; 
+    margin: 30px auto;
 
 }
 
@@ -83,6 +83,69 @@
     text-decoration: underline;
 }
 
-.digital-collect-spacing{
+.digital-collect-spacing {
     margin-top: 30px;
+}
+
+/****** superHeroWorldCard*****/
+
+.superHeroWorldCard-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    column-gap: 2rem;
+
+}
+
+.superHeroWorldCard-text-side {
+    width: 35%;
+    height: auto;
+    position: relative;
+}
+
+.superHeroWorldCard-heading {
+    font-size: 1.4rem;
+    color: #ECD200;
+}
+
+.revers {
+    flex-direction: row-reverse;
+}
+
+.superHeroWorldCard-weapon{
+    width: 100%;
+    max-width: 540px;
+    overflow: hidden;
+
+}
+
+.superHeroWorldCard-weapon img{
+width: 100%;
+height: auto;
+object-fit: contain;
+margin-top: 120px;
+}
+
+.superHeroWorldCard-weapon-left{
+margin-left:-35px ;
+}
+
+.superHeroWorldCard-weapon-right{
+margin-right:-35px ;
+}
+
+
+.superHeroWorldCard-detail{
+    /* background-color: red; */
+    width: fit-content;
+}
+
+.superHeroWorldCard-list{
+    margin: 0;
+    /* background: #3399ff; */
+    padding-left: 20px;
+}
+
+.superHeroWorldCard-list li::marker{
+    color: #ECD200; 
 }
