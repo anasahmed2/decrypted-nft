@@ -1,23 +1,11 @@
 .main-section {
     width: 100%;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-image: url("../../public/assets/images/bg/hero-bg.png");
-}
+    background-repeat: no-repeat;
+    background: transparent linear-gradient(180deg, #0E0020 0%, #010001 51%, #0D001E 100%) 0% 0% no-repeat padding-box;
 
-.showdowButton {
-    background-color: #060C03;
-    color: #ECD200;
-    border-radius: 5px;
-    border: #ECD200;
-    box-shadow: 5px 5px #ECD200;
-    text-transform: uppercase;
-    padding: 20px;
-}
-
-.showdowButton:hover{
-    box-shadow: 5px 5px 6px #ECD200;
-    background-color: rgb(11, 21, 4)
 }

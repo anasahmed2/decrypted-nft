@@ -1,4 +1,4 @@
-.hero-container{
+.hero-container {
     display: flex;
     width: 100%;
     max-width: 1500px;
@@ -9,8 +9,51 @@
     margin-top: 100px;
 }
 
-.hero-heading{
+.hero-heading {
     max-width: 1400px;
     color: #ECD200;
     text-align: center;
+}
+
+.hero-desc {
+    font-size: 1.3rem;
+    text-align: center;
+    max-width: 750px;
+    margin-top: 20px;
+}
+
+.hero-button {
+    margin-top: 20px;
+}
+
+.hero-cards {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.hero-card-imges-side {
+    width: 380px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-card-imges-middle {
+    width: 650px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-card-imges-middle img,
+.hero-card-imges-side img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
