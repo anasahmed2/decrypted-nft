@@ -53,6 +53,8 @@
 
 .hero-card-imges-middle img,
 .hero-card-imges-side img {
+    position: relative;
+    z-index: 10;
     width: 100%;
     height: auto;
     object-fit: contain;

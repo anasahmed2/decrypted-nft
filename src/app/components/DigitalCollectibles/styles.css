@@ -1,0 +1,24 @@
+.digital-collect-container {
+    padding: 10px;
+}
+
+.digital-collect-heading {
+    text-align: center;
+    color: #ECD200;
+    max-width: 1300px;
+    line-height: 95%;
+    margin-top: 40px;
+}
+
+.digital-collect-desc {
+    margin: 20px auto;
+    max-width: 770px;
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 95%;
+}
+
+.digital-spot-position{
+    bottom: -10px;
+    right: -10px;
+}

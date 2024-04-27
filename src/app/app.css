@@ -6,6 +6,22 @@
     flex-direction: column;
     background-image: url("../../public/assets/images/bg/hero-bg.png");
     background-repeat: no-repeat;
-    background: transparent linear-gradient(180deg, #0E0020 0%, #010001 51%, #0D001E 100%) 0% 0% no-repeat padding-box;
-
+    background-size: 100%;
 }
+
+.main-greadent-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: transparent linear-gradient(180deg, #0E0020 0%, #010001 51%, #0D001E 100%) 0% 0% no-repeat padding-box;
+    background-repeat: no-repeat;   
+   
+}
+
+.container-top-spacing{
+    padding-top: 390px;
+    margin-top: -370px;
+}
+
