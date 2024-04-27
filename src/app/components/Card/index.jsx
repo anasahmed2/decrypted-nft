@@ -45,7 +45,12 @@ function DigitalCollectCard() {
 }
 
 function SuperHeroWorldCard(props) {
-    const { revers, image, heading, detail, points } = props
+    const {
+        revers,
+        image,
+        heading,
+        detail,
+        points } = props
     return (
         <main className={`superHeroWorldCard-container ${revers && "revers"}`}>
             <div className='superHeroWorldCard-text-side'>
@@ -81,4 +86,27 @@ function SuperHeroWorldCard(props) {
     )
 }
 
-export { DigitalCollectCard, SuperHeroWorldCard }
+
+function RoadMapSildeCard(props) {
+    const {
+        check,
+        index,
+        heading } = props
+
+    const formatSerialNumber = (num) => {
+        return num < 10 ? `0${num}` : num;
+    };
+    return (
+        <main className='roadMapSildeCard-container'>
+            <div className='roadmapp-heading'>
+                <span className='roadmap-sno'>{formatSerialNumber(index + 1)}</span>
+                <h2 className='field-heading roadmap-card-heading'>{heading}</h2>
+            </div>
+            <div className={`roadmap-status ${check ? "roadmap-status-check" : "roadmap-status-uncheck"} `}>
+                {check ? (`Launched `) : "Pipeline"}
+                {check && <Image width={30} height={30} alt='check' src={"/assets/images/icons/check-mark.svg"} />}
+            </div>
+        </main>
+    )
+}
+export { DigitalCollectCard, SuperHeroWorldCard, RoadMapSildeCard }

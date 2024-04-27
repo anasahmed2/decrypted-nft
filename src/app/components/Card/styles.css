@@ -112,40 +112,102 @@
     flex-direction: row-reverse;
 }
 
-.superHeroWorldCard-weapon{
+.superHeroWorldCard-weapon {
     width: 100%;
     max-width: 540px;
     overflow: hidden;
 
 }
 
-.superHeroWorldCard-weapon img{
-width: 100%;
-height: auto;
-object-fit: contain;
-margin-top: 120px;
+.superHeroWorldCard-weapon img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-top: 120px;
 }
 
-.superHeroWorldCard-weapon-left{
-margin-left:-35px ;
+.superHeroWorldCard-weapon-left {
+    margin-left: -35px;
 }
 
-.superHeroWorldCard-weapon-right{
-margin-right:-35px ;
+.superHeroWorldCard-weapon-right {
+    margin-right: -35px;
 }
 
 
-.superHeroWorldCard-detail{
+.superHeroWorldCard-detail {
     /* background-color: red; */
     width: fit-content;
 }
 
-.superHeroWorldCard-list{
+.superHeroWorldCard-list {
     margin: 0;
     /* background: #3399ff; */
     padding-left: 20px;
 }
 
-.superHeroWorldCard-list li::marker{
-    color: #ECD200; 
+.superHeroWorldCard-list li::marker {
+    color: #ECD200;
+}
+
+/******** roadMapSildeCard ***********/
+
+.roadMapSildeCard-container {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff52;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.roadmap-sno {
+    color: transparent;
+    font-size: 3rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #ffff;
+    z-index: 1;
+    margin-right: 20px;
+}
+
+.roadmapp-heading {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+
+}
+
+.roadmap-card-heading {
+    color: #ECD200;
+    text-transform: none;
+}
+
+.roadmap-status {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.roadmap-status-check {
+    background-color: #ECD200;
+    color: #000;
+}
+
+.roadmap-status-uncheck {
+    border: 1px solid #ECD200;
+    color: #fff;
 }

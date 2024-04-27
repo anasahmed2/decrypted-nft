@@ -1,0 +1,19 @@
+.roadmap-container {
+    row-gap: 3rem;
+    padding-top: 50px;
+}
+
+.roadmap-heading {
+    color: #ECD200;
+    letter-spacing: -.001rem;
+}
+
+.roadmap-silde-container {
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+}
