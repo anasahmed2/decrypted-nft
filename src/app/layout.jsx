@@ -1,5 +1,5 @@
-import Header from "./components/Header";
 import "./globals.css";
+import { AOSInit } from "./aos";
 import localFont from "next/font/local"
 
 const monaco = localFont({
@@ -20,6 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <AOSInit />
       <body className={monaco.className}>
         {children}
       </body>
