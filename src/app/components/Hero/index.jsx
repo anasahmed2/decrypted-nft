@@ -20,7 +20,7 @@ function Hero() {
             <button data-aos="fade"
                 data-aos-duration="900"
                 className='hero-button rounded-yellow-button'>
-                <div>Let's explore</div>
+                <div>{`Let's explore`}</div>
             </button>
             <section className='hero-cards'>
                 <div className='hero-card-imges-side'>

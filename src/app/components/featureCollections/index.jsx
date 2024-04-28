@@ -9,7 +9,7 @@ function FeatureCollections() {
       <h1 className='section-heading featureCollections-heading'>FEATURED COLLECTION</h1>
       <section className='featureCollectionsCard-container'>\
         {featuresCard_data.map((value, index) => (
-        <FeatureCard {...value} />
+        <FeatureCard {...value} key={index}/>
       ))}
       </section>
       <button className='showdowButton'>

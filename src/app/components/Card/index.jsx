@@ -32,8 +32,8 @@ function DigitalCollectCard() {
                 </div>
                 <div className='digital-card-heading-container'>
                     <div className='heading-with-point'>
-                        <h2 className='field-heading digital-card-heading'>TO OUR HOLDERS:</h2>
-                        <span>brace yourselves for what's coming. It's going to be legendary!</span>
+                        <h2 className='field-heading digital-card-heading'>{`TO OUR HOLDERS:`}</h2>
+                        <span>{`brace yourselves for what's coming. It's going to be legendary!`}</span>
                     </div>
                     <p>Our mission is to foster ownership and engagement within our web-3 brand by bridging the gap between our community and the web-2 world, creating a space where members can participate through incentives and mechanics without compromising the integrity of their NFTs</p>
                 </div>
