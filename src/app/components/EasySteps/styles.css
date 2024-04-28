@@ -1,0 +1,22 @@
+.easystep-container {
+    padding-top: 200px;
+}
+
+.easystep-heading {
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.easystep-main-heading {
+    color: #ECD200;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.easyStep-card-caontainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-gap: 20px 50px;
+}

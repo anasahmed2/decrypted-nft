@@ -4,7 +4,9 @@ import Image from 'next/image'
 
 function NewsForJoin() {
     return (
-        <main className='fixed-container newforJoin-container relative'>
+            <main className='fixed-container newforJoin-container relative' data-aos="fade"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" id='join-the-league'>
             <div className='newforJoinCard-container'>
                 <Image
                     width={500}

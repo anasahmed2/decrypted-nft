@@ -1,0 +1,38 @@
+.JoinDiscord-heading {
+    max-width: 700px;
+    color: #ECD200;
+    text-align: center;
+}
+
+.red-underline {
+    width: 100%;
+    max-width: 350px;
+    height: 3px;
+    background-color: #7E1C29;
+    margin-bottom: 10px;
+}
+
+.joinDiscord-bgImage {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../../../public/assets/images/joinDiscord-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 10;
+}
+
+.joinDiscord-desc{
+font-size: 1.8rem;
+margin-top: 10px;
+margin-left: 30px;
+}
+
+.discord-image{
+margin-top: 70px;
+}

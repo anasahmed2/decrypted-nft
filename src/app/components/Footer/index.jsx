@@ -9,13 +9,18 @@ function Footer() {
         <footer className='footer-container'>
             <main className='footer-main'>
                 <section className='footer-top-container'>
-                    <div className='footer-signUp-section'>
+                    <div className='footer-signUp-section'
+                        data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <h1 className='section-heading footer-heading'>DON'T MISS OUT</h1>
                         <p className='footer-desc'>Sign up for the latest beauty news, product samples and coupons</p>
                         <input class="footer-input" name="text" placeholder="Search..." type="search" />
                         <button className='footer-signup-button'>sign up</button>
                     </div>
-                    <div className='footer-logo-section'>
+                    <div className='footer-logo-section' data-aos="fade-up"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine">
                         <Image
                             width={282}
                             height={150}
@@ -45,9 +50,9 @@ function Footer() {
                     </div>
 
                 </section>
-                <div className='footer-links-container '>
+                <div className='footer-links-container'>
                     {headerLinks?.map((value, index) => (
-                        <Link key={index} href="">{value.name}</Link>
+                        <Link  key={index} href={`#${value.id}`}>{value.name}</Link>
                     ))}
                 </div>
             </main>
@@ -63,7 +68,7 @@ function Footer() {
                     />
                     <p>All Rights reserved -Superheroine Era.</p>
                 </div>
-                <div className='footer-go-to-top'>
+                <div className='footer-go-to-top' >
                     <Link href={""}>Terms & Agreements</Link>
                     <Link href={""}>Privacy Policy</Link>
                     <Link href={""}>Back to Top</Link>

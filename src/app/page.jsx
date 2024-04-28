@@ -22,10 +22,10 @@ export default function Home() {
       <div className="main-greadent-section">
         <CommunityPerks/>
       </div>
-      <div className="main-greadent-section">
+      <div className="main-greadent-section black-greadent">
         <SuperHeroWorld/>
       </div>
-      <div className="main-greadent-section">
+      <div className="main-greadent-section purple-black-greadent ">
         <RoadMaps/>
       </div>
       <div className="main-feacture-section">

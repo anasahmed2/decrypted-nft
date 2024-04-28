@@ -5,7 +5,9 @@ import Link from 'next/link'
 
 function DigitalCollectCard() {
     return (
-        <main className='digitalCard-container'>
+        <main data-aos="fade"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" className='digitalCard-container'>
             <div className='digital-card-image'>
                 <Image
                     loading='lazy'
@@ -50,10 +52,11 @@ function SuperHeroWorldCard(props) {
         image,
         heading,
         detail,
-        points } = props
+        points,
+        video } = props
     return (
         <main className={`superHeroWorldCard-container ${revers && "revers"}`}>
-            <div className='superHeroWorldCard-text-side'>
+            <div data-aos={`${revers ? "fade-left" : "fade-right"}`} className='superHeroWorldCard-text-side'>
                 <div className='superHeroWorldCard-detail'>
                     <h4 className='superHeroWorldCard-heading'>{heading}</h4>
                     <p>{detail}</p>
@@ -75,12 +78,25 @@ function SuperHeroWorldCard(props) {
             </div>
             <div className='superHeroWorldCard-image-side relative'>
                 <Image
+                    data-aos={`${revers ? "fade-right" : "fade-left"}`}
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
                     width={326}
                     height={52}
                     alt={`point-${revers ? "" : ""}`}
                     src={`${revers ? "/assets/images/point-right.svg" : "/assets/images/point-left.svg"}`}
                     loading='lazy'
                 />
+            </div>
+            <div className={`superHeroWorldCard-video-side relative ${revers ? "justify-end" : "justify-start"}`}>
+                <video autoPlay muted className='superHeroWorldCard-video'
+                    data-aos={`${revers ? "fade-right" : "fade-left"}`}
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"  >
+                    <source src={video} type="video/mp4" />
+                    <source src={video} type="video/ogg" />
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </main>
     )
@@ -97,7 +113,9 @@ function RoadMapSildeCard(props) {
         return num < 10 ? `0${num}` : num;
     };
     return (
-        <main className='roadMapSildeCard-container'>
+        <main data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" className='roadMapSildeCard-container'>
             <div className='roadmapp-heading'>
                 <span className='roadmap-sno'>{formatSerialNumber(index + 1)}</span>
                 <h2 className='field-heading roadmap-card-heading'>{heading}</h2>
@@ -112,11 +130,76 @@ function RoadMapSildeCard(props) {
 
 
 function FeatureCard(props) {
-    const {image} = props
+    const { image } = props
     return (
-        <main className='featureCard-container'>
-            <Image width={380 } height={ 467} alt='Card_image' src={image} loading='lazy' />
+        <main className='featureCard-container' data-aos="fade"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine" >
+            <Image width={380} height={467} alt='Card_image' src={image} loading='lazy' />
         </main>
     )
 }
-export { DigitalCollectCard, SuperHeroWorldCard, RoadMapSildeCard, FeatureCard }
+
+function EasyStepCard(props) {
+    const { image, heading, index } = props
+
+    return (
+        <main 
+        className='easyStepCard-container' 
+        data-aos="flip-left"
+        data-aos-easing="linear"
+        data-aos-duration="1000" >
+            <Image
+                width={165}
+                height={165}
+                alt='nft-logo'
+                src={image}
+                loading='lazy' />
+            <div className='nft-statue-container'>
+                <span className='easyStepCard-sno'>{index + 1}</span>
+                <h2 className='field-heading easyStep-heading'>{heading}</h2>
+            </div>
+        </main>
+    )
+}
+
+function NftItemCard(props) {
+    const { image, eth, cardNumber } = props
+
+    return (
+        <main className='nftItemCard-container' 
+        data-aos="flip-left"
+        data-aos-easing="linear"
+        data-aos-duration="1000">
+            <div className='nftItems-card-image'>
+                <Image
+                    className='nft-card-img'
+                    src={image}
+                    width={300}
+                    height={340}
+                    alt='' />
+            </div>
+            <div className='nft-card-heading'>
+                <p>{`Superheroine #${cardNumber}`}</p>
+                <span>08 : 23 : 56</span>
+            </div>
+            <section className='nft-card-bottom'>
+                <div className='nft-card-points'>
+                    <Image
+                    width={30}
+                    height={30}
+                    alt=''
+                    src={"/assets/images/card-items-logo.svg"}/>
+                    <div className='nft-points'>
+                        <h5>Highest Bid</h5>
+                        <h2>{`${eth} ETH`}</h2>
+                    </div>
+                </div>
+                <button className='nft-card-button'>Auction</button>
+            </section>
+        </main>
+    )
+}
+
+
+export { DigitalCollectCard, SuperHeroWorldCard, RoadMapSildeCard, FeatureCard, EasyStepCard, NftItemCard }

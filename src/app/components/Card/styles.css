@@ -94,7 +94,7 @@
     height: auto;
     display: flex;
     column-gap: 2rem;
-
+    margin: 10px auto;
 }
 
 .superHeroWorldCard-text-side {
@@ -148,6 +148,29 @@
 
 .superHeroWorldCard-list li::marker {
     color: #ECD200;
+}
+
+.superHeroWorldCard-video-side {
+    width: 100%;
+    height: auto;
+    padding-inline-start: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.justify-start {
+    justify-content: flex-start;
+
+}
+
+.justify-end {
+    justify-content: flex-end;
+
+}
+
+.superHeroWorldCard-video {
+    width: 100%;
+    max-width: 600px;
 }
 
 /******** roadMapSildeCard ***********/
@@ -219,6 +242,73 @@
     max-width: 320px;
     height: auto;
     padding: 10px;
-    /* background: transparent linear-gradient(180deg, #0E0020 0%, #010001 51%, #0D001E 100%) 0% 0% no-repeat padding-box; */
 
+}
+
+.easyStepCard-container {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.easyStepCard-container>img{
+    width: 100%;
+    max-width: 165px;
+    height: 165px;
+    /* height: auto; */
+    object-fit: contain;
+}
+
+.nft-statue-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.easyStepCard-sno{
+    color: transparent;
+    font-size: 4rem;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #ffff;
+    z-index: 1;
+    margin-left: 20px;
+}
+
+.easyStep-heading{
+    font-size: 1.5rem;
+    color: #ECD200;
+    text-wrap: wrap;
+    word-spacing: -.1rem;
+}
+
+.nftItemCard-container{
+    width: 100%;
+    max-width: 370px;
+    height: auto;
+    padding: 10px;
+    background-color: #0F0F0F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nftItems-card-image{
+    width: 100%;
+    height: auto;
+    padding-top: 2px;
+    border: 3px solid #ECD200;
+    border-radius: 10px;
+}
+
+.nft-card-img{
+    width: 100%;
+    object-fit: contain;
+  
 }

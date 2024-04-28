@@ -1,0 +1,24 @@
+.main-greadent-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: transparent linear-gradient(180deg, #0E0020 0%, #010001 51%, #0D001E 100%) 0% 0% no-repeat padding-box;
+    background-repeat: no-repeat;
+}
+
+
+.container-top-spacing2 {
+    padding-top: 100px;
+    margin-top: -20px;
+}
+
+
+.purple-black-greadent {
+    background: transparent linear-gradient(180deg, #010001 0%, #0D001E 51%, #0D001E 100%) 0% 0% no-repeat padding-box;
+}
+
+.footer-spacing {
+    padding: 70px;
+}

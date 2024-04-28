@@ -9,7 +9,7 @@ export const AOSInit = () => {
         AOS.init({
             easing: 'ease-in-out',
             duration: 400,
-            once: true,
+            
         });
     }, [])
 

@@ -11,6 +11,9 @@ function Header() {
         <>
             <header className='header-container'>
                 <Image
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
                     width={282}
                     height={150}
                     loading='lazy'
@@ -18,11 +21,25 @@ function Header() {
                     src={"/assets/images/logo.png"}
                 />
                 <div className='header-links-container'>
-                    {headerLinks?.map((value, index) => (   
-                        <Link key={index} href="">{value.name}</Link>
+                    {headerLinks?.map((value, index) => (
+                        <Link
+                        data-aos="flip-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                            key={index}
+                            href={`#${value.id}`}>
+                            {value.name}
+                        </Link>
                     ))}
                 </div>
-                <button className='showdowButton '>exclusive mint coming soon</button>
+                <Link
+                    href={"/exclusive-mint"}
+                    className='showdowButton'
+                    data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">
+                    exclusive mint coming soon
+                </Link>
             </header>
             <div className='header-spacing'></div>
         </>
