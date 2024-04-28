@@ -2,29 +2,9 @@ import React from 'react'
 import "./styles.css"
 import Image from 'next/image'
 import Link from 'next/link'
+import { headerLinks } from '@/app/config/constant'
 
-const headerLinks = [
-    {
-        id: "home",
-        name: "home",
-    },
-    {
-        id: "Digital-collectibles",
-        name: "Digital collectibles",
-    },
-    {
-        id: "join-the-league",
-        name: "join the league",
-    },
-    {
-        id: "world",
-        name: "world",
-    },
-    {
-        id: "gazette",
-        name: "gazette",
-    },
-]
+
 
 function Header() {
     return (

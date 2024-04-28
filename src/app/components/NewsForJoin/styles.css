@@ -1,6 +1,5 @@
 .newforJoin-container{
-    padding-top:200px ;
-    margin-top: -30px;
+    padding-top:50px ;
 }
 
 .newforJoinCard-container{
@@ -41,6 +40,6 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
-    align-items: center;
 
+    align-items: center;
 }

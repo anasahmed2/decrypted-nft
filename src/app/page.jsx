@@ -7,6 +7,7 @@ import SuperHeroWorld from "./components/SupperHeroWorld";
 import RoadMaps from "./components/RoadMaps";
 import FeatureCollections from "./components/featureCollections";
 import NewsForJoin from "./components/NewsForJoin";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -30,10 +31,11 @@ export default function Home() {
       <div className="main-feacture-section">
         <FeatureCollections/>
       </div>
-      <div className="main-greadent-section purple-greadent">
+      <div className="main-greadent-section purple-greadent container-top-spacing2 ">
         <NewsForJoin/>
+        <Footer/>
       </div>
-
+     
     </main>
   );
 }
