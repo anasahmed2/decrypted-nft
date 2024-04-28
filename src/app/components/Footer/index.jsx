@@ -13,8 +13,8 @@ function Footer() {
                         data-aos="fade-up"
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine">
-                        <h1 className='section-heading footer-heading'>DON'T MISS OUT</h1>
-                        <p className='footer-desc'>Sign up for the latest beauty news, product samples and coupons</p>
+                        <h1 className='section-heading footer-heading'>{`DON'T MISS OUT`}</h1>
+                        <p className='footer-desc'>{`Sign up for the latest beauty news, product samples and coupons`}</p>
                         <input className="footer-input" name="text" placeholder="Search..." type="search" />
                         <button className='footer-signup-button'>sign up</button>
                     </div>
@@ -66,12 +66,12 @@ function Footer() {
                         src={"/assets/images/game-play-logo.svg"}
                         className='footer-logo-icon'
                     />
-                    <p>All Rights reserved -Superheroine Era.</p>
+                    <p>{`All Rights reserved -Superheroine Era.`}</p>
                 </div>
                 <div className='footer-go-to-top' >
-                    <Link href={""}>Terms & Agreements</Link>
-                    <Link href={""}>Privacy Policy</Link>
-                    <Link href={""}>Back to Top</Link>
+                    <Link href={""}>{`Terms & Agreements`}</Link>
+                    <Link href={""}>{`Privacy Policy`}</Link>
+                    <Link href={""}>{`Back to Top`}</Link>
                 </div>
             </div>
 
