@@ -4,8 +4,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { headerLinks } from '@/app/config/constant'
 
-
-
 function Header() {
     return (
         <>

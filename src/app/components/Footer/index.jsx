@@ -15,7 +15,7 @@ function Footer() {
                         data-aos-easing="ease-in-sine">
                         <h1 className='section-heading footer-heading'>DON'T MISS OUT</h1>
                         <p className='footer-desc'>Sign up for the latest beauty news, product samples and coupons</p>
-                        <input class="footer-input" name="text" placeholder="Search..." type="search" />
+                        <input className="footer-input" name="text" placeholder="Search..." type="search" />
                         <button className='footer-signup-button'>sign up</button>
                     </div>
                     <div className='footer-logo-section' data-aos="fade-up"
