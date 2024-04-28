@@ -71,3 +71,22 @@ export const roadmap_data = [
         heading: "Global Era Tour",
     },
 ]
+
+export const featuresCard_data = [
+    {
+        image: "/assets/images/features-images/card-image-1.png"
+    },
+    {
+        image: "/assets/images/features-images/card-image-2.png"
+    },
+    {
+        image: "/assets/images/features-images/card-image-3.png"
+    },
+    {
+        image: "/assets/images/features-images/card-image-4.png"
+    },
+    {
+        image: "/assets/images/features-images/card-image-5.png"
+    },
+
+]

@@ -1,0 +1,21 @@
+.featureCollections-container{
+    padding-top: 50px;
+    row-gap: 2rem;
+    max-width: 100%;
+    padding-bottom: 20px;
+}
+
+.featureCollections-heading{
+    color: #ECD200  ;
+    text-align: center;
+}
+
+.featureCollectionsCard-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap:1rem ;
+
+}

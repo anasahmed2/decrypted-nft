@@ -5,6 +5,8 @@ import DigitalCollectibles from "./components/DigitalCollectibles";
 import CommunityPerks from "./components/CommunityPerks";
 import SuperHeroWorld from "./components/SupperHeroWorld";
 import RoadMaps from "./components/RoadMaps";
+import FeatureCollections from "./components/featureCollections";
+import NewsForJoin from "./components/NewsForJoin";
 
 export default function Home() {
   return (
@@ -25,6 +27,13 @@ export default function Home() {
       <div className="main-greadent-section">
         <RoadMaps/>
       </div>
+      <div className="main-feacture-section">
+        <FeatureCollections/>
+      </div>
+      <div className="main-greadent-section purple-greadent">
+        <NewsForJoin/>
+      </div>
+
     </main>
   );
 }

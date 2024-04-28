@@ -109,4 +109,14 @@ function RoadMapSildeCard(props) {
         </main>
     )
 }
-export { DigitalCollectCard, SuperHeroWorldCard, RoadMapSildeCard }
+
+
+function FeatureCard(props) {
+    const {image} = props
+    return (
+        <main className='featureCard-container'>
+            <Image width={380 } height={ 467} alt='Card_image' src={image} loading='lazy' />
+        </main>
+    )
+}
+export { DigitalCollectCard, SuperHeroWorldCard, RoadMapSildeCard, FeatureCard }

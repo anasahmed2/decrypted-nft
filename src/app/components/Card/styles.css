@@ -211,3 +211,14 @@
     border: 1px solid #ECD200;
     color: #fff;
 }
+
+/********* featureCard *********/
+
+.featureCard-container {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    padding: 10px;
+    /* background: transparent linear-gradient(180deg, #0E0020 0%, #010001 51%, #0D001E 100%) 0% 0% no-repeat padding-box; */
+
+}

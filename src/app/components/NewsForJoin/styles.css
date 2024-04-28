@@ -1,0 +1,46 @@
+.newforJoin-container{
+    padding-top:200px ;
+    margin-top: -30px;
+}
+
+.newforJoinCard-container{
+    width: 100%;
+    height: auto ;
+    background-color: #ffffff48;
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.newforJoinCard-container img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.NewsForJoin-heading{
+    color: #ECD200;
+    text-align: center  ;
+    font-size: 2.5rem;
+}
+
+.news-left{
+    margin-top: -150px;
+    margin-left: -150px;
+}
+.news-right{
+    margin-top: -150px;
+    margin-right: -150px;
+}
+
+.newforJoinCard-heading-container{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+
+}

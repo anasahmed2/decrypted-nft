@@ -17,11 +17,25 @@
     flex-direction: column;
     background: transparent linear-gradient(180deg, #0E0020 0%, #010001 51%, #0D001E 100%) 0% 0% no-repeat padding-box;
     background-repeat: no-repeat;   
-   
+}
+.main-feacture-section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("../../public/assets/images/featured-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;   
 }
 
 .container-top-spacing{
     padding-top: 390px;
     margin-top: -370px;
+}
+
+.purple-greadent{
+    background: transparent linear-gradient(180deg, #010001 0%, #0D001E 51%, #0E0020 100%) 0% 0% no-repeat padding-box;
+
 }
 
